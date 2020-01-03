@@ -1,8 +1,6 @@
-<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+{%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
 <ul id="slide-out" class="sidenav">
   
@@ -18,3 +16,8 @@
     
 </ul>
     
+<div class="fixed-action-btn">
+  <a href="#" data-target="slide-out" class="btn-floating btn-large red sidenav-trigger">
+    <i class="large material-icons">menu</i>
+  </a>
+</div>
